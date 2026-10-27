@@ -1,0 +1,16 @@
+.app {
+  text-align: center;
+  padding: 30px;
+}
+
+.app h1 {
+  color: #1f3864;
+  font-size: 3rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}

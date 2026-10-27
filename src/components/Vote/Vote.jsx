@@ -9,8 +9,14 @@ function Vote({ name }) {
       <h2>{name}</h2>
       <p className="votes">קולות: <strong>{votes}</strong></p>
 
+      {votes >= 10 && <p className="leader">המועמד מוביל!</p>}
+
       <div className="buttons">
         <button onClick={() => setVotes(votes + 1)}>הצבע</button>
+        <button onClick={() => setVotes(votes - 1)} disabled={votes === 0}>
+          בטל קול
+        </button>
+        <button onClick={() => setVotes(0)}>איפוס</button>
       </div>
     </div>
   );

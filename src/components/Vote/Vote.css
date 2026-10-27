@@ -1,0 +1,46 @@
+.vote-card {
+  background-color: white;
+  border: 1px solid #d0d7e2;
+  border-radius: 15px;
+  padding: 25px 40px;
+  min-width: 200px;
+}
+
+.vote-card.popular {
+  background-color: #e3f6e3;
+}
+
+.vote-card h2 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.votes {
+  font-size: 1.5rem;
+}
+
+.leader {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: #3070d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.buttons button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
